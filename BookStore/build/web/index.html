@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/bookstore.css"/>
+        <title>Crear Libros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Agregar nuevo libro.</h1>
+        <form action="CrearLibro" method="post">
+            <article>
+                <header>
+                    <h2>Informacion general</h2>
+                </header>
+                <p>
+                    <label>Nombre: </label>
+                    <input type="text" id="txtNombre" name="Nombre"/>
+                    <br/><br/>  
+                    <label>Precio: </label>
+                    <input type="text" id="txtPrecio"  name="Precio" />
+                    <br/><br/>
+                    <label>ISBN: </label>
+                    <input type="text" id="txtISBN" name="ISBN"/>
+                    <br/><br/>
+                    <label>Fecha de Publicacion: </label>
+                    <input type="text" id="txtFecha" name="Fecha"/>
+                    <br/><br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Informacion del genero</h2>
+                </header>
+                <p>
+                    <label>Genero: </label>
+                    <input type="text" id="txtGenero" name="Genero"/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Informacion de publicacion</h2>
+                </header>
+                <p>
+                    <label>Editorial: </label>
+                    <input type="text" id="txtEditorial" name='Editorial'/>
+                    <br/><br/>
+                    <label>Autor: </label>
+                    <input type="text" id="txtAutor" name="Autor"/>
+                </p>
+            </article>
+            <input type="submit" class="btn" />
+        </form>
+    </body>
+</html>
